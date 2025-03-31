@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6010 Digital Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold"> <img src="https://scontent.fceb5-1.fna.fbcdn.net/v/t39.30808-6/305458540_442335674581336_5313670039986086018_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFQFnVCRMilxJUavpwdRK7rEMctg_ls8YAQxy2D-WzxgPnm6NqiRgMloWvVeLNKyKKtof1i6SQEKSwMqdWg5d3Y&_nc_ohc=YaB2s0oedUIQ7kNvgHH6luf&_nc_zt=23&_nc_ht=scontent.fceb5-1.fna&_nc_gid=2iuzJg_5fqJbu-tS5NrT9g&oh=00_AYHSmcGKraM-deAtCz3soXMRtZrG4ef8Eo5wCiJg0EcwSw&oe=67F022CC" alt="Logo" class="h-8"> </div>
+        <div class="hidden md:flex space-x-6 text-gray-300">
+            <a href="#" class="hover:text-white">Abouts</a>
+            <a href="#" class="hover:text-white">Services</a>
+            <a href="#" class="hover:text-white">Why us</a>
+            <a href="#" class="hover:text-white">FAQ</a>
+            <a href="#" class="hover:text-white">Contact</a>
+            <a href="#" class="hover:text-white">Projects</a>
+            <a href="#" class="hover:text-white">Articles</a>
+        </div>
+        <div class="hidden md:flex space-x-4">
+            <button class="bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600">Contacts Us</button>
+            <button class="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600">Get Started for Free</button>
+        </div>
+        <button class="md:hidden text-xl" id="mobile-menu-button">&#9776;</button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center space-y-4 py-4 bg-gray-800">
+        <a href="#" class="hover:text-gray-300">About us</a>
+        <a href="#" class="hover:text-gray-300">Services</a>
+        <a href="#" class="hover:text-gray-300">Why us</a>
+        <a href="#" class="hover:text-gray-300">FAQ</a>
+        <a href="#" class="hover:text-gray-300">Contact</a>
+        <a href="#" class="hover:text-gray-300">Projects</a>
+        <a href="#" class="hover:text-gray-300">Articles</a>
+        <button class="bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600">Contacts Us</button>
+        <button class="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600">Get Started for Free</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center text-center px-6 mt-16 max-w-4xl mx-auto relative">
+        <!-- <h3 class="text-sm text-gray-400">Choose Your Hero — [You]</h3> -->
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight mt-2">
+            ELEVATE YOUR ONLINE PRESENCE WITH EXPERT  <br> 
+            <span class="text-blue-500">WEB DEVELOPMENT</span>
+        </h1>
+        <p class="text-lg text-gray-400 mt-4 max-w-2xl">
+            We Build Websites That Convert<br> We specialize in creating high-performance websites, landing pages, and custom web solutions tailored to your business needs.
+            <a href="#" class="text-blue-400 underline"></a>
+        </p>
+        <div class="mt-6 flex space-x-4">
+            <button class="bg-gray-700 px-6 py-3 rounded-lg hover:bg-gray-600 flex items-center">▶Get Started</button>
+            <button class="bg-blue-500 px-6 py-3 rounded-lg hover:bg-blue-600 flex items-center">🏠 Sign Up</button>
+        </div>
+        <img src="hero-image.png" alt="Hero Image" class="mt-10 max-w-full">
+    </section>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
